@@ -1,6 +1,43 @@
 [theme]
-primaryColor = "#FFFF00"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "rgb(188, 187, 186)"
-textColor = "#262730"
+# Configuração do tema escuro
+primaryColor = "#FFD700"  # Amarelo dourado para elementos primários
+backgroundColor = "#121212"  # Cor de fundo escura
+secondaryBackgroundColor = "#1E1E1E"  # Cor secundária mais clara
+textColor = "#FFFFFF"  # Texto branco
 font = "sans serif"
+
+# Personalização adicional
+[server]
+enableCORS = false
+
+# Estilos CSS adicionais (opcional)
+[ui]
+# Isso será injetado como CSS no seu app
+customCSS = """
+<style>
+    /* Botões com destaque amarelo */
+    .stButton>button {
+        border: 1px solid #FFD700;
+        color: #FFD700;
+    }
+    .stButton>button:hover {
+        background-color: #FFD70020;
+    }
+    
+    /* Destaques em tabelas */
+    .stDataFrame {
+        border: 1px solid #FFD70020;
+    }
+    
+    /* Barra lateral com detalhes amarelos */
+    [data-testid="stSidebar"] {
+        background-color: #1E1E1E;
+        border-right: 1px solid #FFD70020;
+    }
+    
+    /* Títulos em amarelo */
+    h1, h2, h3 {
+        color: #FFD700 !important;
+    }
+</style>
+"""
