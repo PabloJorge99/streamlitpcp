@@ -96,8 +96,6 @@ def load_data(uploaded_file):
         st.error(f"Failed to load data: {str(e)}")
         return pd.DataFrame()  # Return empty DataFrame on error
 
-# Page configuration
-st.set_page_config(layout="wide", page_title="Dashboard de OFs")
 
 # Upload file in sidebar
 with st.sidebar:
