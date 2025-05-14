@@ -7,9 +7,6 @@ import plotly.express as px
 # Initialize the DataFrame at the start to prevent NameError
 df = pd.DataFrame()
 
-# Page configuration
-st.set_page_config(layout="wide", page_title="Dashboard de OFs")
-
 # Custom CSS for KPIs
 st.markdown("""
 <style>
