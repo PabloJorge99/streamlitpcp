@@ -51,7 +51,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        file_path = "P:/LIMPEZA 3- QUARENTENA/PABLO/ofs_fulldata.xlsx"
+        file_path = "https://github.com/PabloJorge99/streamlitpcp/blob/main/ofs_fulldata.xlsx"
         df = pd.read_excel(file_path)
         
        
