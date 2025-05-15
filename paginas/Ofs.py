@@ -4,9 +4,6 @@ import numpy as np
 from datetime import datetime, date, timedelta
 import plotly.express as px
 
-# Initialize the DataFrame at the start to prevent NameError
-df = pd.DataFrame()
-
 # Custom CSS for KPIs
 st.markdown("""
 <style>
@@ -53,6 +50,9 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+
+# Initialize the DataFrame at the start to prevent NameError
+df = pd.DataFrame()
 
 # Load data function with improved error handling
 @st.cache_data
